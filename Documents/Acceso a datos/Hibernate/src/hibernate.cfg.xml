@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
                                          "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
-<hibernate-configuration>					
+<hibernate-configuration>
  <session-factory>
   <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
-  <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/hibernatet6</property>
+  <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/examen_febrero</property>
   <property name="hibernate.connection.username">root</property>
   <property name="hibernate.default_schema">hibernatet6</property>
   <!-- <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property> -->
   <property name="hibernate.dialect">org.hibernate.dialect.MySQL5InnoDBDialect</property>
-  <mapping resource="AD/Empresa.hbm.xml"/>
-  <mapping resource="AD/Item.hbm.xml"/>
-  <mapping resource="AD/Pedido.hbm.xml"/>
+  <mapping resource="AD/Festival.hbm.xml"/>
+  <mapping resource="AD/Grupo.hbm.xml"/>
+  <mapping resource="AD/Actuacion.hbm.xml"/>
  </session-factory>
 </hibernate-configuration>
